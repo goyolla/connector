@@ -18,6 +18,9 @@
 .no-pad {
   padding: 0;
 }
+.p-10 {
+  padding: 10px;
+}
 .pt-5 {
   padding-top: 5px;
 }
@@ -146,6 +149,17 @@ h1,
     font-size: 32px;
   }
 }
+@media (max-width:320px) {
+  .fs-xxlarge,
+  h1,
+  .h1,
+  .page-title,
+h1,
+.h1,
+.page-title {
+    font-size: 24px;
+  }
+}
 .fs-xlarge,
 h2,
 .h2,
@@ -161,6 +175,17 @@ h2,
 .h2,
 .sub-title {
     font-size: 24px;
+  }
+}
+@media (max-width:320px) {
+  .fs-xlarge,
+  h2,
+  .h2,
+  .sub-title,
+h2,
+.h2,
+.sub-title {
+    font-size: 20px;
   }
 }
 .fs-large,
@@ -192,6 +217,25 @@ h4,
     font-size: 20px;
   }
 }
+@media (max-width:320px) {
+  .fs-large,
+  h3,
+  .h3,
+  .section-title,
+  h4,
+  .h4,
+  .title-description,
+  .main-nav a,
+h3,
+.h3,
+.section-title,
+h4,
+.h4,
+.title-description,
+.main-nav a {
+    font-size: 18px;
+  }
+}
 .fs-medium,
 h5,
 .h5,
@@ -210,6 +254,19 @@ h5,
 .photo-title,
 .main-nav a {
     font-size: 18px;
+  }
+}
+@media (max-width:320px) {
+  .fs-medium,
+  h5,
+  .h5,
+  .photo-title,
+  .main-nav a,
+h5,
+.h5,
+.photo-title,
+.main-nav a {
+    font-size: 16px;
   }
 }
 .fs-small,
@@ -238,6 +295,9 @@ li,
 }
 .fs-xxsmall {
   font-size: 12px;
+}
+.fs-xxxsmall {
+  font-size: 10px;
 }
 .fw-strong,
 h1,
@@ -272,7 +332,7 @@ h4,
 .h4,
 .title-description,
 .main-nav a {
-  font-weight: 200;
+  font-weight: 300;
 }
 .td-underline {
   text-decoration: underline;
@@ -351,9 +411,21 @@ sup {
   padding-bottom: 30px;
   border-bottom: 1px solid #25c2dc;
 }
+@media (max-width:320px) {
+  .page-title {
+    padding-bottom: 15px;
+    margin-top: 10px;
+  }
+}
 .sub-title {
   padding-bottom: 16px;
   border-bottom: 3px solid #0070bb;
+}
+@media (max-width:320px) {
+  .sub-title {
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
 }
 hr {
   height: 0;
@@ -381,6 +453,14 @@ body {
 }
 body.modal-open {
   margin-right: 0px;
+}
+.pager {
+  text-align: left;
+}
+.pager li>a,
+.pager li>span {
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
 .btn {
   -webkit-border-radius: 0;
@@ -496,6 +576,11 @@ body.modal-open {
   padding-left: 0;
 }
 @media screen and (min-width: 768px) {
+}
+@media (max-width:320px) {
+  .navbar {
+    margin-bottom: 10px;
+  }
 }
 .navbar-brand img.little-logo {
   display: inline;
@@ -834,7 +919,7 @@ li.active .box-link-rapper .data-source-title {
 .box-link-rapper:hover .data-source-title:after,
 li.active .box-link-rapper .data-source-title:after {
   content: " \003E";
-  padding-left: 10px;
+  padding-left: 3px;
   font-weight: bold;
 }
 .box-link-rapper:hover .wrap-source-icon,
@@ -857,11 +942,21 @@ li.active .box-link-rapper .wrap-source-icon {
 .app-rapper {
   margin-bottom: 40px;
 }
+@media (max-width:320px) {
+  .app-rapper {
+    margin-bottom: 20px;
+  }
+}
 .app-card {
   position: relative;
   height: 260px;
   padding-top: 10px;
   background-color: #fff;
+}
+@media (max-width:320px) {
+  .app-card {
+    height: 245px;
+  }
 }
 .app-card .app-description {
   margin: 0 5px 0 20px;
@@ -894,11 +989,6 @@ li.active .box-link-rapper .wrap-source-icon {
 }
 .app-card .app-icon {
   height: 64px;
-}
-@media (max-width:767px) {
-  .app-card {
-    border-bottom: solid 1px #999;
-  }
 }
 .app-card .apple-logo {
   width: 16px;
@@ -1123,4 +1213,10 @@ p.fs-medium {
 }
 .pra-title {
   margin: 15px;
+}
+.form-group {
+  margin-bottom: 25px;
+}
+.require-message {
+  padding: 6px;
 }
